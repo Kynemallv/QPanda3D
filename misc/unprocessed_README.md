@@ -55,7 +55,7 @@ if __name__ == "__main__":
 ## Widget resizing policy
 
 Starting from V 0.4, the widget is automatically resized without making any stretching artefacts. Resizing policy parameters (introduced in V 0.2) have been removed since they are no more needed.
-  
+
 ```python
 from QPanda3D.QPanda3DWidget import QPanda3DWidget
 if __name__ == "__main__":

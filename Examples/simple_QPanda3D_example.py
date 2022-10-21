@@ -7,12 +7,10 @@ Description :
     wrapped inside a QMainWindow.
 """
 
-from QPanda3D.Panda3DWorld import Panda3DWorld
-from QPanda3D.QPanda3DWidget import QPanda3DWidget
+from QPanda3D.QPanda3D.Panda3DWorld import Panda3DWorld
+from QPanda3D.QPanda3D.QPanda3DWidget import QPanda3DWidget
 # import PyQt5 stuff
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
+from PySide6.QtWidgets import *
 import sys
 
 from panda3d.core import Point3, Vec3, Vec4, VBase4

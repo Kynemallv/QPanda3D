@@ -7,18 +7,17 @@ Description :
     wrapped inside a QMainWindow and add QT pushbuttons that interact with the world.
 """
 
-from QPanda3D.Panda3DWorld import Panda3DWorld
-from QPanda3D.QPanda3DWidget import QPanda3DWidget
+from QPanda3D.QPanda3D.Panda3DWorld import Panda3DWorld
+from QPanda3D.QPanda3D.QPanda3DWidget import QPanda3DWidget
 
 # import PyQt5 stuff
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
+from PySide6.QtWidgets import *
 import sys
 from panda3d.core import *
 from direct.interval.LerpInterval import LerpHprInterval
 from direct.interval.IntervalGlobal import *
 from direct.gui.OnscreenImage import OnscreenImage
+
 
 class PandaTest(Panda3DWorld):
     def __init__(self, width=1024, height=768):
@@ -70,6 +69,7 @@ class PandaTest(Panda3DWorld):
     def roll(self):
         self.roll_seq.start()
 
+
 if __name__ == "__main__":    
     world = PandaTest() 
     app = QApplication(sys.argv)
@@ -101,5 +101,5 @@ if __name__ == "__main__":
 
     appw.setCentralWidget(main_widget)
     appw.show()
-    sys.exit(app.exec_())    
+    sys.exit(app.exec())
     

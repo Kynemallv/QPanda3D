@@ -8,12 +8,12 @@ Description :
 """
 
 # PyQt imports
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
+from PySide6.QtGui import QCursor
+from PySide6.QtWidgets import QWidget
 
 # Panda imports
-from panda3d.core import *
+from panda3d.core import LPoint2, MouseWatcher
+
 
 __all__ = ["QMouseWatcherNode"]
 

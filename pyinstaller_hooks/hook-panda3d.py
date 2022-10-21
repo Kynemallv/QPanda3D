@@ -8,6 +8,7 @@ from PyInstaller.utils.hooks import collect_submodules
 from PyInstaller.utils.hooks import collect_data_files
 from PyInstaller.utils.hooks import collect_dynamic_libs
 
+
 print(" -------- Adding panda3d hook ------------")
 
 hiddenimports = collect_submodules('panda3d')
