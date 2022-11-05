@@ -26,8 +26,8 @@ class PandaTest(Panda3DWorld):
         self.buff.setClearColorActive(True)
         self.buff.setClearColor(VBase4(0.5, 0, 0, 1))
         self.cam.node().getDisplayRegion(0).setSort(20)
-        #Create a panda        
-        self.panda= loader.loadModel("panda")
+        # Create a panda
+        self.panda = loader.loadModel("panda")
         self.panda.reparentTo(render)
         self.panda.setPos(0,0,0)
                   
